@@ -3,308 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Areej Salaymeh, Ph.D. — Assistant Professor of Information Technology</title>
-  <meta name="description" content="Personal academic website of Dr. Areej Salaymeh, Assistant Professor of Information Technology at Lawrence Technological University." />
+  <title>Areej Salaymeh, Ph.D.</title>
+  <meta name="description" content="Personal academic website of Dr. Areej Salaymeh — research in machine learning, data science, and intelligent systems." />
+  <meta name="keywords" content="Areej Salaymeh, Machine Learning, Data Science, Deep Learning, Multi-Agent Reinforcement Learning, Intelligent Transportation Systems, Business Analytics" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="nav">
-    <div class="container nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span>Areej</span> Salaymeh
-      </a>
-      <ul class="nav__links">
-        <li><a href="index.html" class="active">Home</a></li>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html"><span class="brand__name"><span class="accent">Areej</span> Salaymeh</span></a>
+        <span class="brand__sub">Ph.D. &middot; Machine Learning &amp; Data Science</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE (two columns) ===== -->
+  <div class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img
+        src="assets/img/profile.jpg"
+        alt="Dr. Areej Salaymeh"
+        class="sidebar__photo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      />
+      <div class="sidebar__initials" style="display:none;">AS</div>
+
+      <div class="sidebar__card">
+        <h2>Contact</h2>
+        <div class="contact-row">
+          <i class="fas fa-envelope"></i>
+          <div><span class="label">Email</span><a href="mailto:asalaymeh@ltu.edu">asalaymeh@ltu.edu</a></div>
+        </div>
+        <div class="contact-row">
+          <i class="fas fa-phone"></i>
+          <div><span class="label">Phone</span>248.204.3064</div>
+        </div>
+        <div class="contact-row">
+          <i class="fas fa-graduation-cap"></i>
+          <div><span class="label">Field</span>Computer Science &amp; Data Science</div>
+        </div>
+        <div class="sidebar__social">
+          <a href="mailto:asalaymeh@ltu.edu" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/a-salaymeh" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+
+      <article class="post">
+        <h2 class="post__title">Welcome</h2>
+        <div class="post__rule"></div>
+        <div class="entry">
+          <p>
+            I am an Assistant Professor of Information Technology and a researcher in
+            <strong>machine learning</strong>, <strong>data science</strong>, and
+            <strong>intelligent systems</strong>. My work explores how AI and data-driven
+            methods can be applied to real-world problems in transportation, business
+            analytics, and decision-making.
+          </p>
+          <p>
+            I hold a Ph.D. in Computer Science from Wayne State University, where I previously
+            spent over eight years as a lecturer and graduate academic advisor, supporting
+            students across the Computer Science and Data Science &amp; Business Analytics
+            programs in setting their academic and career goals.
+          </p>
+          <p class="highlight">
+            I am actively looking for motivated students and collaborators. If you are interested
+            in working with me on machine learning, data science, or intelligent systems, please
+            email me a copy of your CV.
+          </p>
+          <div class="interests">
+            <span class="interest-tag">Machine Learning</span>
+            <span class="interest-tag">Data Science</span>
+            <span class="interest-tag">Deep Learning</span>
+            <span class="interest-tag">Multi-Agent Reinforcement Learning</span>
+            <span class="interest-tag">Intelligent Transportation Systems</span>
+            <span class="interest-tag">Business Analytics</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <h3 class="post__title post__title--sub">Latest News</h3>
+        <div class="post__rule"></div>
+        <ul class="news">
+          <li><span class="date">June 2026:</span> Launched my personal academic website.</li>
+          <li><span class="date">May 2024:</span> Completed my Ph.D. in Computer Science at Wayne State University.</li>
+          <li><span class="date">2016 &ndash; 2024:</span> Served as lecturer and graduate academic advisor at Wayne State University.</li>
+        </ul>
+        <p style="font-size:.85rem;color:var(--text-muted);margin-top:16px;font-style:italic;">
+          News will be updated as new publications, achievements, and announcements occur.
+        </p>
+      </article>
+
+      <article class="post">
+        <h3 class="post__title post__title--sub">Education</h3>
+        <div class="post__rule"></div>
+        <ul class="news">
+          <li><span class="date">Ph.D., Computer Science</span> &mdash; Wayne State University</li>
+          <li><span class="date">M.S., Computer Science</span> &mdash; Jordan University of Science and Technology</li>
+          <li><span class="date">B.S., Computer Science</span> &mdash; Yarmouk University</li>
+        </ul>
+        <div class="btn-row">
+          <a href="research.html" class="btn btn-primary"><i class="fas fa-flask"></i> My Research</a>
+          <a href="contact.html" class="btn btn-outline"><i class="fas fa-envelope"></i> Get in Touch</a>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-menu">
+        <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <div class="hero__photo-wrap">
-        <img
-          src="assets/img/profile.jpg"
-          alt="Dr. Areej Salaymeh"
-          class="hero__photo"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-        />
-        <div class="hero__initials" style="display:none;">AS</div>
-        <div class="hero__social">
-          <a href="mailto:asalaymeh@ltu.edu" title="Email" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://scholar.google.com" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
-            <i class="fas fa-graduation-cap"></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/a-salaymeh" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="hero__content">
-        <p class="hero__label">Lawrence Technological University</p>
-        <h1 class="hero__name">Areej Salaymeh, Ph.D.</h1>
-        <p class="hero__title">Assistant Professor of Information Technology</p>
-        <p class="hero__institution">College of Business and Information Technology</p>
-        <div class="hero__tags">
-          <span class="hero__tag"><i class="fas fa-brain" style="margin-right:5px;font-size:.7rem;"></i>Machine Learning</span>
-          <span class="hero__tag"><i class="fas fa-chart-line" style="margin-right:5px;font-size:.7rem;"></i>Data Science</span>
-          <span class="hero__tag"><i class="fas fa-robot" style="margin-right:5px;font-size:.7rem;"></i>Deep Learning</span>
-          <span class="hero__tag"><i class="fas fa-car" style="margin-right:5px;font-size:.7rem;"></i>Intelligent Transportation</span>
-          <span class="hero__tag"><i class="fas fa-network-wired" style="margin-right:5px;font-size:.7rem;"></i>Multi-Agent RL</span>
-        </div>
-        <div class="hero__actions">
-          <a href="contact.html" class="btn btn-primary">
-            <i class="fas fa-envelope"></i> Get in Touch
-          </a>
-          <a href="research.html" class="btn btn-outline-white">
-            <i class="fas fa-flask"></i> View Research
-          </a>
-          <a href="publications.html" class="btn btn-outline-white">
-            <i class="fas fa-file-alt"></i> Publications
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="section" id="about">
-    <div class="container">
-      <p class="section-label">About</p>
-      <h2 class="section-title">About Me</h2>
-      <div class="about__grid">
-        <div class="about__bio">
-          <p>
-            I am an Assistant Professor of Information Technology in the College of Business and Information Technology
-            at <strong>Lawrence Technological University</strong>. My research lies at the intersection of machine learning,
-            data science, and intelligent systems — with a particular focus on how AI can be applied to real-world
-            problems in transportation, business analytics, and decision-making.
-          </p>
-          <p>
-            Before joining LTU, I spent over eight years at <strong>Wayne State University</strong>, where I served as
-            a lecturer and graduate academic advisor in the Computer Science department, supporting students across
-            the Computer Science and Data Science &amp; Business Analytics programs in setting academic and career goals.
-          </p>
-          <p>
-            I am passionate about bridging rigorous academic research with practical impact, and I welcome collaboration
-            with students and colleagues who share an interest in AI, machine learning, and data-driven solutions.
-          </p>
-        </div>
-        <div>
-          <div class="about__contact-card">
-            <h3><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Contact &amp; Location</h3>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-text">
-                <strong>Email</strong>
-                <a href="mailto:asalaymeh@ltu.edu">asalaymeh@ltu.edu</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-text">
-                <strong>Phone</strong>
-                248.204.3064
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-door-open"></i></div>
-              <div class="contact-text">
-                <strong>Office</strong>
-                M345 A, Buell Building<br/>
-                Lawrence Technological University
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-university"></i></div>
-              <div class="contact-text">
-                <strong>Institution</strong>
-                <a href="https://www.ltu.edu" target="_blank" rel="noopener">Lawrence Technological University</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EDUCATION ===== -->
-  <section class="section section--gray" id="education">
-    <div class="container">
-      <p class="section-label">Background</p>
-      <h2 class="section-title">Education</h2>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-degree">Ph.D.</div>
-          <div class="edu-field">Computer Science</div>
-          <div class="edu-school">Wayne State University</div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-icon">📘</div>
-          <div class="edu-degree">M.S.</div>
-          <div class="edu-field">Computer Science</div>
-          <div class="edu-school">Jordan University of Science and Technology</div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-icon">📗</div>
-          <div class="edu-degree">B.S.</div>
-          <div class="edu-field">Computer Science</div>
-          <div class="edu-school">Yarmouk University</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RESEARCH HIGHLIGHTS ===== -->
-  <section class="section" id="research">
-    <div class="container">
-      <p class="section-label">Research</p>
-      <h2 class="section-title">Research Interests</h2>
-      <div class="research-grid">
-        <div class="research-card">
-          <div class="research-card__icon"><i class="fas fa-brain"></i></div>
-          <h3>Machine Learning</h3>
-          <p>Developing and applying ML algorithms to complex, real-world datasets across transportation, business, and healthcare domains.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-card__icon"><i class="fas fa-chart-bar"></i></div>
-          <h3>Data Science</h3>
-          <p>Extracting actionable insights from large-scale data through statistical modeling, visualization, and predictive analytics.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-card__icon"><i class="fas fa-network-wired"></i></div>
-          <h3>Deep Learning</h3>
-          <p>Designing deep neural network architectures for pattern recognition, classification, and sequence modeling tasks.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-card__icon"><i class="fas fa-robot"></i></div>
-          <h3>Multi-Agent Reinforcement Learning</h3>
-          <p>Building cooperative and competitive agent systems that learn optimal policies through environmental interaction.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-card__icon"><i class="fas fa-car"></i></div>
-          <h3>Intelligent Transportation Systems</h3>
-          <p>Applying AI and data-driven approaches to improve traffic flow, safety, and autonomous vehicle coordination.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-card__icon"><i class="fas fa-briefcase"></i></div>
-          <h3>Business Analytics</h3>
-          <p>Leveraging data analytics and ML to support informed business decision-making and strategic planning.</p>
-        </div>
-      </div>
-      <div style="margin-top:36px; text-align:center;">
-        <a href="research.html" class="btn btn-outline">
-          <i class="fas fa-arrow-right"></i> Learn More About My Research
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== NEWS ===== -->
-  <section class="section section--gray" id="news">
-    <div class="container">
-      <p class="section-label">Updates</p>
-      <h2 class="section-title">News &amp; Updates</h2>
-      <ul class="news-list">
-        <li class="news-item">
-          <span class="news-date">Jun 2026</span>
-          <span class="news-text">
-            Launched personal academic website at <a href="https://areejsalaymeh.com">areejsalaymeh.com</a>.
-          </span>
-        </li>
-        <li class="news-item">
-          <span class="news-date">Aug 2024</span>
-          <span class="news-text">
-            Joined Lawrence Technological University as Assistant Professor of Information Technology.
-            <span class="news-badge badge-service">New Position</span>
-          </span>
-        </li>
-        <li class="news-item">
-          <span class="news-date">May 2024</span>
-          <span class="news-text">
-            Completed Ph.D. in Computer Science at Wayne State University.
-            <span class="news-badge badge-award">Milestone</span>
-          </span>
-        </li>
-      </ul>
-      <p style="font-size:.85rem;color:var(--text-muted);margin-top:20px;font-style:italic;">
-        * News items will be updated as new achievements, publications, and announcements occur.
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Interested in Collaborating?</h2>
-      <p>
-        I am open to research collaborations, industry partnerships, and graduate students with interests
-        in machine learning, data science, and intelligent systems. Feel free to reach out.
-      </p>
-      <div class="hero__actions">
-        <a href="mailto:asalaymeh@ltu.edu" class="btn btn-primary">
-          <i class="fas fa-envelope"></i> Email Me
-        </a>
-        <a href="contact.html" class="btn btn-outline-white">
-          <i class="fas fa-info-circle"></i> Contact Info
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="index.html" class="nav__logo" style="display:inline-block;margin-bottom:10px;"><span>Areej</span> Salaymeh</a>
-          <p>Assistant Professor of Information Technology<br/>Lawrence Technological University</p>
-        </div>
-        <div class="footer__col">
-          <h4>Navigation</h4>
-          <ul class="footer__links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Connect</h4>
-          <div class="footer__social" style="margin-bottom:16px;">
-            <a href="mailto:asalaymeh@ltu.edu" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/a-salaymeh" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          </div>
-          <p style="font-size:.85rem;">asalaymeh@ltu.edu<br/>248.204.3064</p>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>&copy; 2026 Areej Salaymeh. All rights reserved.</span>
-        <span>Lawrence Technological University</span>
-      </div>
+      <p class="copyright">&copy; 2026 Areej Salaymeh. All rights reserved.</p>
     </div>
   </footer>
 

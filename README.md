@@ -1,10 +1,10 @@
 # areejsalaymeh.com — Personal Academic Website
 
-Personal website of Dr. Areej Salaymeh, Assistant Professor of Information Technology at Lawrence Technological University.
+Personal academic website of Dr. Areej Salaymeh — research in machine learning, data science, and intelligent systems.
 
 ## Tech Stack
 
-Pure HTML5 + CSS3 + Vanilla JS. No build step required. Hosted on GitHub Pages with a custom domain.
+Pure HTML5 + CSS3 + Vanilla JS, with a green academic theme (serif typography, two-column layout) inspired by classic faculty pages. No build step required. Hosted on GitHub Pages with a custom domain.
 
 ## File Structure
 
