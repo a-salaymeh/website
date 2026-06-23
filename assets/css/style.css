@@ -421,9 +421,10 @@ p:last-child { margin-bottom: 0; }
 
 /* Courses taught */
 .course-org {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--blue);
-  margin: 30px 0 4px;
+  margin: 32px 0 2px;
 }
 .course-org:first-of-type { margin-top: 10px; }
 .course-org__note {
@@ -432,25 +433,29 @@ p:last-child { margin-bottom: 0; }
   font-weight: 400;
   font-style: italic;
   color: var(--text-muted);
-  margin-top: 2px;
+  margin-top: 1px;
+  margin-bottom: 6px;
 }
-.course-list { list-style: none; margin-top: 14px; }
+.course-list { list-style: none; margin-top: 12px; }
 .course {
-  padding: 12px 0;
+  padding: 7px 0;
   border-bottom: 1px dashed var(--border);
+  line-height: 1.5;
 }
 .course:last-child { border-bottom: none; }
+.course__head { display: inline; }
 .course__code {
   font-weight: 700;
   color: var(--blue-mid);
-  margin-right: 8px;
+  margin-right: 6px;
 }
 .course__name { font-weight: 600; color: var(--text); }
 .course__terms {
-  font-size: .88rem;
+  display: inline;
+  font-size: .85rem;
   color: var(--text-muted);
-  margin-top: 4px;
 }
+.course__terms::before { content: " \2014 "; }
 
 /* Photo gallery */
 .gallery {
