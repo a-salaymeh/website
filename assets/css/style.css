@@ -452,6 +452,29 @@ p:last-child { margin-bottom: 0; }
   margin-top: 4px;
 }
 
+/* Photo gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.gallery__item {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  aspect-ratio: 3 / 2;
+  background: var(--card);
+}
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+.gallery__item:hover img { transform: scale(1.04); }
+@media (max-width: 560px) { .gallery { grid-template-columns: 1fr; } }
+
 /* Numbered list (student guide) */
 .steps { list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 18px 0 26px; }
 .steps li { display: flex; gap: 14px; align-items: flex-start; }
