@@ -1,6 +1,9 @@
 # Local Claude Code / editor config
 .claude/
 
+# Source photos (copied into assets/img as needed)
+Pictures/
+
 # OS files
 .DS_Store
 Thumbs.db
