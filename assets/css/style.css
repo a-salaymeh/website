@@ -476,7 +476,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--text-muted);
   font-size: .94rem;
   line-height: 1.55;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 .alum__award {
   display: inline-block;
