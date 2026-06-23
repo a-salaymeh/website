@@ -491,9 +491,10 @@ p:last-child { margin-bottom: 0; }
 }
 .alum__award i { color: var(--blue-mid); margin-right: 5px; }
 .alum__date {
+  display: block;
   font-size: .82rem;
   color: var(--text-muted);
-  margin-left: 8px;
+  margin-top: 6px;
 }
 
 /* Photo gallery */
