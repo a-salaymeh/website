@@ -457,6 +457,45 @@ p:last-child { margin-bottom: 0; }
 }
 .course__terms::before { content: " \2014 "; }
 
+/* Graduate research lab alumni */
+.alumni-list { list-style: none; }
+.alum {
+  padding: 13px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.alum:last-child { border-bottom: none; }
+.alum__name {
+  display: block;
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 1.02rem;
+}
+.alum__project {
+  display: block;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: .94rem;
+  line-height: 1.55;
+  margin-top: 2px;
+}
+.alum__award {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--blue-deep);
+  background: rgba(61,139,212,.12);
+  border: 1px solid rgba(29,78,137,.20);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+.alum__award i { color: var(--blue-mid); margin-right: 5px; }
+.alum__date {
+  font-size: .82rem;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
 /* Photo gallery */
 .gallery {
   display: grid;
