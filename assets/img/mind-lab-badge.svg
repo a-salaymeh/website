@@ -1,0 +1,64 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MIND Lab emblem">
+  <defs>
+    <clipPath id="brain">
+      <path d="M200,272 C180,278 158,272 148,256 C128,260 110,248 112,228 C94,222 88,200 102,186 C90,172 96,148 116,142 C122,124 148,118 164,128 C176,116 200,118 200,134 C200,118 224,116 236,128 C252,118 278,124 284,142 C304,148 310,172 298,186 C312,200 306,222 288,228 C290,248 272,260 252,256 C242,272 220,278 200,272 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Orbital rings -->
+  <circle cx="200" cy="200" r="152" fill="none" stroke="#d4a23a" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#16365c" stroke-width="1.5" opacity="0.35"/>
+  <path d="M70,200 A130,130 0 0 1 200,70" fill="none" stroke="#2c6cb0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M330,200 A130,130 0 0 1 232,322" fill="none" stroke="#5eb3f0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Orbital node dots -->
+  <circle cx="200" cy="48" r="5" fill="#16365c"/>
+  <circle cx="306" cy="94" r="4" fill="#d4a23a"/>
+  <circle cx="352" cy="200" r="5" fill="#2c6cb0"/>
+  <circle cx="306" cy="306" r="4" fill="#16365c"/>
+  <circle cx="200" cy="352" r="5" fill="#d4a23a"/>
+  <circle cx="94" cy="306" r="4" fill="#2c6cb0"/>
+  <circle cx="48" cy="200" r="5" fill="#16365c"/>
+  <circle cx="94" cy="94" r="4" fill="#d4a23a"/>
+
+  <!-- Brain fills (clipped) -->
+  <g clip-path="url(#brain)">
+    <rect x="40" y="100" width="320" height="200" fill="#16365c"/>
+    <rect x="200" y="100" width="160" height="200" fill="#2c6cb0"/>
+
+    <!-- Left hemisphere: circuit traces -->
+    <g stroke-linecap="round" fill="none">
+      <path d="M196,160 H168 V146" stroke="#d4a23a" stroke-width="2.4"/>
+      <path d="M196,178 H150" stroke="#5eb3f0" stroke-width="2.4"/>
+      <path d="M196,196 H132 V212" stroke="#d4a23a" stroke-width="2.4"/>
+      <path d="M196,214 H160 V230" stroke="#5eb3f0" stroke-width="2.4"/>
+      <path d="M196,232 H176" stroke="#d4a23a" stroke-width="2.4"/>
+    </g>
+    <circle cx="168" cy="146" r="3.4" fill="#d4a23a"/>
+    <circle cx="150" cy="178" r="3.4" fill="#5eb3f0"/>
+    <circle cx="132" cy="212" r="3.4" fill="#d4a23a"/>
+    <circle cx="160" cy="230" r="3.4" fill="#5eb3f0"/>
+    <circle cx="176" cy="232" r="3.4" fill="#d4a23a"/>
+    <circle cx="120" cy="190" r="2.6" fill="#ffffff" opacity="0.8"/>
+    <circle cx="184" cy="170" r="2.6" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Right hemisphere: data cityscape -->
+    <g>
+      <rect x="214" y="206" width="12" height="44" fill="#5eb3f0"/>
+      <rect x="230" y="184" width="12" height="66" fill="#e6c067"/>
+      <rect x="246" y="198" width="12" height="52" fill="#ffffff" opacity="0.88"/>
+      <rect x="262" y="176" width="12" height="74" fill="#5eb3f0"/>
+      <rect x="278" y="212" width="12" height="38" fill="#e6c067"/>
+    </g>
+    <!-- data points -->
+    <rect x="232" y="170" width="4" height="4" fill="#e6c067"/>
+    <rect x="264" y="162" width="4" height="4" fill="#5eb3f0"/>
+    <rect x="248" y="184" width="4" height="4" fill="#ffffff" opacity="0.85"/>
+  </g>
+
+  <!-- Center seam -->
+  <path d="M200,130 V270" stroke="#ffffff" stroke-width="2" opacity="0.45"/>
+
+  <!-- Brain outline -->
+  <path d="M200,272 C180,278 158,272 148,256 C128,260 110,248 112,228 C94,222 88,200 102,186 C90,172 96,148 116,142 C122,124 148,118 164,128 C176,116 200,118 200,134 C200,118 224,116 236,128 C252,118 278,124 284,142 C304,148 310,172 298,186 C312,200 306,222 288,228 C290,248 272,260 252,256 C242,272 220,278 200,272 Z" fill="none" stroke="#0f2a47" stroke-width="3"/>
+</svg>

@@ -497,6 +497,15 @@ p:last-child { margin-bottom: 0; }
   margin-top: 6px;
 }
 
+/* Lab page logo */
+.lab-logo {
+  display: block;
+  width: 150px;
+  max-width: 45%;
+  height: auto;
+  margin: 0 0 14px;
+}
+
 /* Lab page subtitle */
 .lab-subtitle {
   color: var(--text-muted);
