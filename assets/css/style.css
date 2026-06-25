@@ -318,6 +318,8 @@ p:last-child { margin-bottom: 0; }
   border-bottom: 1px dashed var(--border);
   position: relative;
   line-height: 1.6;
+  font-size: .88rem;
+  text-align: justify;
 }
 .news li:last-child { border-bottom: none; }
 .news li::before {
