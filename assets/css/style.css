@@ -284,7 +284,7 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 20px;
 }
 
-.entry { text-align: left; }
+.entry { text-align: justify; }
 .entry p { line-height: 1.75; }
 .entry strong { color: var(--text); font-weight: 700; }
 
