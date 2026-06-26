@@ -476,6 +476,12 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.55;
   margin-top: 4px;
 }
+.alum__project::before {
+  content: "Project: ";
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text);
+}
 .alum__award {
   display: inline-block;
   margin-top: 8px;
