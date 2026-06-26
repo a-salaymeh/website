@@ -441,7 +441,7 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.45;
 }
 .course:last-child { border-bottom: none; }
-.course__head { display: inline; }
+.course__head { display: block; }
 .course__code {
   font-weight: 700;
   color: var(--blue-mid);
@@ -449,11 +449,11 @@ p:last-child { margin-bottom: 0; }
 }
 .course__name { font-weight: 600; color: var(--text); }
 .course__terms {
-  display: inline;
+  display: block;
   font-size: .85rem;
   color: var(--text-muted);
 }
-.course__terms::before { content: " \2014 "; }
+.course__terms::before { content: ""; }
 
 /* Graduate research lab alumni */
 .alumni-list { list-style: none; }
