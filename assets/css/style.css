@@ -497,13 +497,25 @@ p:last-child { margin-bottom: 0; }
   margin-top: 6px;
 }
 
+/* Lab intro bar — above photo banner */
+.lab-intro-bar {
+  background: var(--bg);
+  padding: 28px 0 20px;
+}
+.lab-intro-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--text);
+  margin: 0;
+}
+
 /* Lab page header — logo left, text right */
 .lab-header {
   display: flex;
   align-items: center;
   gap: 28px;
   margin-bottom: 6px;
-  margin-left: -28px;
 }
 .lab-logo {
   display: block;
@@ -516,9 +528,10 @@ p:last-child { margin-bottom: 0; }
 
 /* Lab page subtitle */
 .lab-subtitle {
-  color: var(--text-muted);
   font-size: 1.05rem;
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-muted);
   white-space: nowrap;
   margin: 0;
 }
