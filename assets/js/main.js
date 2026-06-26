@@ -61,7 +61,8 @@
     btnLeft.addEventListener('click',  () => strip.scrollBy({ left: -SCROLL_BY, behavior: 'smooth' }));
     btnRight.addEventListener('click', () => strip.scrollBy({ left:  SCROLL_BY, behavior: 'smooth' }));
     strip.addEventListener('scroll', syncArrows, { passive: true });
-    syncArrows();
+    // Delay initial sync until images have loaded and measured the strip width
+    window.addEventListener('load', syncArrows);
   }
 
 })();
