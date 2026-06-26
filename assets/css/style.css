@@ -557,6 +557,50 @@ p:last-child { margin-bottom: 0; }
 .member__name { font-weight: 700; color: var(--blue); }
 .member__role { font-size: .9rem; color: var(--text-muted); }
 
+/* MIND Lab photo banner */
+.lab-photo-banner {
+  background: var(--footer);
+  padding: 32px 0 28px;
+  overflow: hidden;
+}
+.lab-photo-strip {
+  display: flex;
+  gap: 24px;
+  padding: 16px 48px 20px;
+  overflow-x: auto;
+  align-items: center;
+  scrollbar-width: none;
+}
+.lab-photo-strip::-webkit-scrollbar { display: none; }
+.lab-photo-frame {
+  flex-shrink: 0;
+  background: #fff;
+  padding: 7px 7px 26px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.55), 0 1px 4px rgba(0,0,0,.35);
+  border-radius: 2px;
+  pointer-events: none;
+  user-select: none;
+  transition: transform .3s ease;
+}
+.lab-photo-frame img {
+  display: block;
+  height: 190px;
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 1px;
+}
+.lab-photo-frame:nth-child(1)  { transform: rotate(-2.1deg); }
+.lab-photo-frame:nth-child(2)  { transform: rotate(1.6deg);  }
+.lab-photo-frame:nth-child(3)  { transform: rotate(-0.8deg); }
+.lab-photo-frame:nth-child(4)  { transform: rotate(2.4deg);  }
+.lab-photo-frame:nth-child(5)  { transform: rotate(-1.7deg); }
+.lab-photo-frame:nth-child(6)  { transform: rotate(1.1deg);  }
+.lab-photo-frame:nth-child(7)  { transform: rotate(-2.5deg); }
+.lab-photo-frame:nth-child(8)  { transform: rotate(0.9deg);  }
+.lab-photo-frame:nth-child(9)  { transform: rotate(-1.3deg); }
+.lab-photo-frame:nth-child(10) { transform: rotate(2.0deg);  }
+
 /* Photo gallery */
 .gallery {
   display: grid;
