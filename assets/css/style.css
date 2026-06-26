@@ -570,6 +570,8 @@ p:last-child { margin-bottom: 0; }
   box-shadow: var(--shadow);
   aspect-ratio: 3 / 2;
   background: var(--card);
+  pointer-events: none;
+  cursor: default;
 }
 .gallery__item img {
   width: 100%;
