@@ -276,7 +276,7 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: -.01em;
   margin-bottom: 6px;
 }
-.post__title--sub { font-size: 1.5rem; }
+.post__title--sub { font-size: 0.75rem; }
 
 .post__rule {
   width: 56px; height: 3px;
