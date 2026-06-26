@@ -69,8 +69,8 @@ p:last-child { margin-bottom: 0; }
 
 .header-inner {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 20px;
+  grid-template-columns: 300px 1fr;
+  gap: 52px;
   align-items: center;
   min-height: 88px;
 }
@@ -153,7 +153,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ---------- Sidebar ---------------------------------------- */
-.sidebar { position: sticky; top: 112px; }
+.sidebar { position: sticky; top: 112px; margin-left: -20px; }
 
 .sidebar__photo {
   width: 100%;
@@ -720,9 +720,9 @@ p:last-child { margin-bottom: 0; }
 /* ---------- Responsive ------------------------------------- */
 @media (max-width: 880px) {
   .page { grid-template-columns: 1fr; gap: 36px; }
-  .sidebar { position: static; order: -1; max-width: 420px; margin: 0 auto; width: 100%; }
+  .sidebar { position: static; order: -1; max-width: 420px; margin: 0 auto; width: 100%; margin-left: auto; }
   .card-grid { grid-template-columns: 1fr; }
-  .header-inner { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .header-inner { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; grid-template-columns: none; }
 }
 
 @media (max-width: 680px) {
