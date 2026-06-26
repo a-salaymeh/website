@@ -420,12 +420,12 @@ p:last-child { margin-bottom: 0; }
 
 /* Courses taught */
 .course-org {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--blue);
-  margin: 32px 0 2px;
+  margin: 22px 0 0;
 }
-.course-org:first-of-type { margin-top: 10px; }
+.course-org:first-of-type { margin-top: 6px; }
 .course-org__note {
   display: block;
   font-size: .85rem;
@@ -433,13 +433,12 @@ p:last-child { margin-bottom: 0; }
   font-style: italic;
   color: var(--text-muted);
   margin-top: 1px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
-.course-list { list-style: none; margin-top: 12px; }
+.course-list { list-style: none; margin-top: 6px; }
 .course {
-  padding: 7px 0;
-  border-bottom: 1px dashed var(--border);
-  line-height: 1.5;
+  padding: 3px 0;
+  line-height: 1.45;
 }
 .course:last-child { border-bottom: none; }
 .course__head { display: inline; }
