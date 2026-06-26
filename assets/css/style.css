@@ -600,6 +600,8 @@ p:last-child { margin-bottom: 0; }
 .lab-photo-frame:nth-child(8)  { transform: rotate(0.9deg);  }
 .lab-photo-frame:nth-child(9)  { transform: rotate(-1.3deg); }
 .lab-photo-frame:nth-child(10) { transform: rotate(2.0deg);  }
+.lab-photo-frame:nth-child(9) img,
+.lab-photo-frame:nth-child(10) img { height: 280px; }
 
 /* Photo gallery */
 .gallery {
