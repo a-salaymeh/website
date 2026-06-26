@@ -34,7 +34,34 @@
     </div>
   </header>
 
-  <div class="page page--single">
+  <div class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img
+        src="assets/img/profile.jpg"
+        alt="Dr. Areej Salaymeh"
+        class="sidebar__photo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      />
+      <div class="sidebar__initials" style="display:none;">AS</div>
+
+      <div class="sidebar__card">
+        <p class="sidebar__title">Assistant Professor</p>
+        <p class="sidebar__dept">Computer and Information Technology</p>
+        <p class="sidebar__org">Lawrence Technological University</p>
+        <p class="sidebar__email"><a href="mailto:asalaymeh@ltu.edu">asalaymeh@ltu.edu</a></p>
+        <div class="sidebar__social">
+          <a href="mailto:asalaymeh@ltu.edu" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/a-salaymeh" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
     <article class="post">
       <h2 class="post__title">Contact</h2>
       <div class="post__rule"></div>
@@ -86,6 +113,7 @@
         </div>
       </div>
     </article>
+  </main>
   </div>
 
   <footer class="site-footer">
