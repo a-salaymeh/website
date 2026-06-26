@@ -69,8 +69,8 @@ p:last-child { margin-bottom: 0; }
 
 .header-inner {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 52px;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
   align-items: center;
   min-height: 88px;
 }
@@ -98,14 +98,15 @@ p:last-child { margin-bottom: 0; }
 }
 .menu a {
   display: block;
-  padding: 8px 16px;
+  padding: 8px 12px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: .08em;
-  font-size: .82rem;
+  font-size: .78rem;
   font-weight: 600;
   border-radius: var(--radius);
   transition: background var(--transition);
+  white-space: nowrap;
 }
 .menu a:hover {
   background: rgba(255,255,255,.16);
