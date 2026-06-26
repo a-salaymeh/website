@@ -483,17 +483,13 @@ p:last-child { margin-bottom: 0; }
   color: var(--text);
 }
 .alum__award {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: .8rem;
-  font-weight: 600;
-  color: var(--blue-deep);
-  background: rgba(61,139,212,.12);
-  border: 1px solid rgba(29,78,137,.20);
-  border-radius: 20px;
-  padding: 3px 12px;
+  display: block;
+  margin-top: 4px;
+  font-size: .88rem;
+  font-weight: 400;
+  color: var(--text-muted);
 }
-.alum__award i { color: var(--blue-mid); margin-right: 5px; }
+.alum__award i { color: var(--blue-mid); margin-right: 4px; }
 .alum__date {
   display: block;
   font-size: .82rem;
