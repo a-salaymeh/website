@@ -607,20 +607,22 @@ p:last-child { margin-bottom: 0; }
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: rgba(255,255,255,0.15);
-  border: 2px solid rgba(255,255,255,0.45);
-  color: #fff;
-  width: 42px;
-  height: 42px;
+  background: rgba(255,255,255,0.82);
+  border: none;
+  color: var(--blue-deep);
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: .95rem;
+  font-size: 1.25rem;
+  font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.4);
   transition: background .2s, opacity .25s;
 }
-.banner-arrow:hover { background: rgba(255,255,255,0.32); }
+.banner-arrow:hover { background: #fff; }
 .banner-arrow--left  { left: 14px;  opacity: 0; pointer-events: none; }
 .banner-arrow--right { right: 14px; }
 .banner-arrow--left.visible  { opacity: 1; pointer-events: auto; }
