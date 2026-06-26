@@ -48,4 +48,20 @@
     el.classList.add('fade-up');
     observer.observe(el);
   });
+  /* Photo banner scroll arrows */
+  const strip    = document.querySelector('.lab-photo-strip');
+  const btnLeft  = document.querySelector('.banner-arrow--left');
+  const btnRight = document.querySelector('.banner-arrow--right');
+  if (strip && btnLeft && btnRight) {
+    const SCROLL_BY = 340;
+    function syncArrows() {
+      btnLeft.classList.toggle('visible', strip.scrollLeft > 4);
+      btnRight.classList.toggle('hidden',  strip.scrollLeft >= strip.scrollWidth - strip.clientWidth - 4);
+    }
+    btnLeft.addEventListener('click',  () => strip.scrollBy({ left: -SCROLL_BY, behavior: 'smooth' }));
+    btnRight.addEventListener('click', () => strip.scrollBy({ left:  SCROLL_BY, behavior: 'smooth' }));
+    strip.addEventListener('scroll', syncArrows, { passive: true });
+    syncArrows();
+  }
+
 })();
