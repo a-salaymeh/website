@@ -458,15 +458,15 @@ p:last-child { margin-bottom: 0; }
 /* Graduate research lab alumni */
 .alumni-list { list-style: none; }
 .alum {
-  padding: 13px 0;
+  padding: 6px 0;
   border-bottom: 1px dashed var(--border);
 }
 .alum:last-child { border-bottom: none; }
 .alum__name {
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--blue);
-  font-size: 1.02rem;
+  font-size: .92rem;
 }
 .alum__project {
   display: block;
