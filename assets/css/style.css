@@ -331,8 +331,8 @@ p:last-child { margin-bottom: 0; }
   background: var(--blue-bright);
 }
 .news .date {
-  font-weight: 700;
-  color: var(--blue-mid);
+  font-weight: 400;
+  color: inherit;
 }
 
 /* ---------- Buttons ---------------------------------------- */
