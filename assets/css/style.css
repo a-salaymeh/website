@@ -578,7 +578,8 @@ p:last-child { margin-bottom: 0; }
   transition: transform .3s ease;
 }
 .gallery__item:hover img { transform: scale(1.04); }
-.gallery__item--wide { grid-column: span 2; }
+.gallery__item--wide { grid-column: span 2; aspect-ratio: 8 / 3; cursor: default; pointer-events: none; }
+.gallery__item--wide img { object-fit: contain; background: var(--card); }
 @media (max-width: 560px) { .gallery { grid-template-columns: 1fr; } .gallery__item--wide { grid-column: span 1; } }
 
 /* Numbered list (student guide) */
