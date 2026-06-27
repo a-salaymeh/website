@@ -43,6 +43,7 @@ a { color: var(--blue); text-decoration: none; }
 a:hover { color: var(--blue-deep); text-decoration: underline; }
 
 img { max-width: 100%; display: block; }
+img[alt="email address"] { display: inline-block; }
 
 h1, h2, h3, h4 {
   font-family: var(--serif);
@@ -210,6 +211,8 @@ p:last-child { margin-bottom: 0; }
   font-size: .92rem;
   margin-bottom: 0;
   word-break: break-word;
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar__card h2 {
@@ -326,7 +329,7 @@ p:last-child { margin-bottom: 0; }
 .news li::before {
   content: '';
   position: absolute;
-  left: 4px; top: 22px;
+  left: 4px; top: 13px;
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--blue-bright);
@@ -528,7 +531,7 @@ p:last-child { margin-bottom: 0; }
 
 /* Lab page subtitle */
 .lab-subtitle {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 700;
   font-style: normal;
   color: var(--text-muted);
@@ -649,6 +652,21 @@ p:last-child { margin-bottom: 0; }
   .director-card__links { justify-content: center; }
 }
 
+/* MIND Lab featured video */
+.lab-video-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,.12);
+}
+.lab-video-wrap video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* MIND Lab photo banner */
 .lab-photo-banner {
   background: var(--footer);
@@ -674,6 +692,15 @@ p:last-child { margin-bottom: 0; }
   pointer-events: none;
   user-select: none;
   transition: transform .3s ease;
+}
+.lab-photo-frame--cap { padding-bottom: 42px; }
+.lab-photo-frame figcaption {
+  font-size: 0.6rem;
+  color: #555;
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+  line-height: 1.3;
 }
 .lab-photo-frame img {
   display: block;
@@ -720,10 +747,12 @@ p:last-child { margin-bottom: 0; }
 .banner-arrow--left.visible  { opacity: 1; pointer-events: auto; }
 .banner-arrow--right.hidden  { opacity: 0; pointer-events: none; }
 @keyframes arrow-hint {
-  0%, 100% { transform: translateY(-50%) translateX(0);   }
-  50%       { transform: translateY(-50%) translateX(5px); }
+  0%   { transform: translateY(-50%) translateX(0);    }
+  35%  { transform: translateY(-50%) translateX(12px); }
+  65%  { transform: translateY(-50%) translateX(5px);  }
+  100% { transform: translateY(-50%) translateX(0);    }
 }
-.banner-arrow--right { animation: arrow-hint 1s ease-in-out 1s 3; }
+.banner-arrow--right { animation: arrow-hint 0.7s ease-out 0.6s 4; }
 
 /* Photo gallery */
 .gallery {
@@ -751,6 +780,32 @@ p:last-child { margin-bottom: 0; }
 .gallery__item--wide { grid-column: span 2; aspect-ratio: 8 / 3; cursor: default; pointer-events: none; }
 .gallery__item--wide img { object-fit: contain; background: var(--card); }
 @media (max-width: 560px) { .gallery { grid-template-columns: 1fr; } .gallery__item--wide { grid-column: span 1; } }
+
+/* Service photo gallery with captions */
+.service-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 8px;
+}
+.service-gallery__item {
+  flex: 0 0 auto;
+  max-width: 340px;
+  margin: 0;
+}
+.service-gallery__item img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: block;
+}
+.service-gallery__item figcaption {
+  margin-top: 7px;
+  font-size: .82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+}
 
 /* Numbered list (student guide) */
 .steps { list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 18px 0 26px; }
