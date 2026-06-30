@@ -652,6 +652,67 @@ p:last-child { margin-bottom: 0; }
   .director-card__links { justify-content: center; }
 }
 
+/* MIND Lab dark sidebar variant */
+.sidebar--mindlab .sidebar__photo {
+  border-radius: 50%;
+  border: 3px solid #d4a23a;
+  box-shadow: 0 0 0 6px rgba(212,162,58,0.18);
+  max-width: 150px;
+  margin-bottom: 18px;
+}
+.sidebar--mindlab .sidebar__initials {
+  border-radius: 50%;
+  border-color: #d4a23a;
+}
+.sidebar--mindlab .sidebar__card {
+  background: #16365c;
+  border-color: rgba(94,179,240,0.15);
+}
+.sidebar--mindlab .sidebar__dept { color: rgba(255,255,255,0.82); white-space: normal; }
+.sidebar--mindlab .sidebar__org  { color: rgba(255,255,255,0.48); white-space: normal; }
+.sidebar--mindlab .sidebar__social a {
+  background: rgba(255,255,255,0.1);
+  color: #5eb3f0;
+}
+.sidebar--mindlab .sidebar__social a:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar--mindlab a { color: #5eb3f0; }
+.sidebar--mindlab a:hover { color: #fff; }
+
+/* In the News card */
+.news-feature-card {
+  display: block;
+  border-left: 4px solid var(--blue);
+  background: linear-gradient(135deg, #eef4fb 0%, #f7faff 100%);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+.news-feature-card:hover {
+  background: linear-gradient(135deg, #ddeaf7 0%, #eef4fb 100%);
+  border-color: var(--blue-deep);
+  text-decoration: none;
+}
+.news-feature-card__label {
+  font-size: 0.75rem;
+  color: var(--blue-mid);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.news-feature-card__label i { margin-right: 5px; font-size: 0.7rem; }
+.news-feature-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue-deep);
+  line-height: 1.4;
+}
+
 /* MIND Lab featured video */
 .lab-video-wrap {
   position: relative;
